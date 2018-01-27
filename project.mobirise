@@ -1,0 +1,326 @@
+{
+  "settings": {
+    "name": "Site-01-27_1617",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.6.2",
+    "uniqCompNum": 20,
+    "versionPublish": "4.6.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h1": {
+              "color": "#616161"
+            },
+            "h2, h3, p": {
+              "color": "#767676"
+            },
+            ".mbr-section-subtitle": {
+              "font-style": "italic"
+            },
+            "H1": {
+              "color": "#ffffff"
+            },
+            "P": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header9",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/sergiu-1-960x640.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                Campionul <br>propriilor lupte</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"></h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><br><i>”Părinții m-au dat la Colegiul de Microelectronică <br>și Tehnică de Calcul ca toată viața să lucrez la <br>calculator, adică să am o muncă mai ușoară, <br>dar eu le-am spus că nu îmi place să stau <br>pe scaun, vreau să mă mișc”.&nbsp;</i><br></p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qHWoHRblpj",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header9-1"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            ".mbr-text": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>Sergiu Socolov, un tânăr de 25 de ani din Chișinău, este antrenor de tenis. Are din copilărie o disabilitate ce nu i-a lăsat prea multe perspective de a avea un job care să presupună efort fizic. Cu toate acestea, acum, după ani de antrenamente și insistențe, a ajuns să antreneze câteva echipe de copii în cadrul Centrului de creație „Artico” din Capitală. &nbsp;</p><p></p><div>„Aveam vreo trei ani când mama a observat că nu merg la fel ca ceilalți copii, cădeam des, eram trist și mă întrebam mereu de ce nu sunt ca toți”, povestește tânărul, care a fost diagnosticat cu o afecțiune ce îi limitează mișcările.&nbsp;</div><div><br></div><div>Treptat și-a acceptat starea fizică și chiar dacă se mișca mai greu decât semenii săi, participa la toate jocurile care se organizau în mahalaua sa, din suburbia Vatra a Chișinăului.</div><div><br></div><div>Datorită insistenței familiei sale a frecventat școala din localitate și nu a mers la o instituție specializată, pentru copii cu disabilități, departe de casă. După absolvirea școlii, tot la insistența s-a înscris la Colegiul de Microelectronică și Tehnică de Calcul din Chișinău.&nbsp;</div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qHWpqoDihS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-2"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background": "@bgColor",
+            ".images-container.container-fluid": {
+              "padding": "0"
+            },
+            ".media-container-row": {
+              "margin": "0 auto",
+              "align-items": "stretch",
+              ".img-item": {
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "center",
+                "position": "relative",
+                "width": "100%",
+                "z-index": "1",
+                "img": {
+                  "width": "100%",
+                  "min-height": "1px"
+                },
+                ".img-caption": {
+                  "background": "@cpBg",
+                  "z-index": "2",
+                  "padding": "1rem 1rem",
+                  "word-break": "break-word",
+                  "p": {
+                    "margin-bottom": "0"
+                  }
+                },
+                "&.item1": {
+                  "padding": "0 2rem 0 0"
+                }
+              },
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".img-item": {
+                "width": "100% !important",
+                "&.item1": {
+                  "width": "100%",
+                  "flex-basis": "initial !important",
+                  "padding": "0 0 2rem 0 !important"
+                }
+              }
+            }
+          },
+          "_name": "image4",
+          "_customHTML": "<section group=\"Images & Videos\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"66\" max=\"100\" value=\"80\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Sizes\" name=\"proportions\" min=\"30\" max=\"300\" value=\"177\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\">\n        <input type=\"color\" title=\"Caption Background\" name=\"cpBg\" value=\"#ffffff\" condition=\"showCaption\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container images-container\" mbr-class=\"{'container-fluid':fullWidth,container:fullWidth==false}\">\n            <div class=\"media-container-row\" mbr-style=\"{'width':contentWidth+'%'}\">\n                <div class=\"img-item item1\" mbr-style=\"{'width':proportions+'%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/sergiu-4-2048x1366.jpg\" alt title>\n                    <div class=\"img-caption\" mbr-if=\"showCaption\">\n                        <p class=\"mbr-fonts-style align-center mbr-black\" mbr-theme-style=\"display-7\">\n                            Responsive\n                        </p>\n                    </div>\n                </div>\n                <div class=\"img-item\">\n                    <img src=\"@PROJECT_PATH@/assets/images/sergiu-3-536x960.jpg\" alt title>\n                    <div class=\"img-caption\" mbr-if=\"showCaption\">\n                        <p class=\"mbr-fonts-style align-center mbr-black\" mbr-theme-style=\"display-7\">\n                            Mobile friendly\n                        </p>\n                    </div>\n                </div>\n            </div>\n    </div>\n</section>",
+          "_cid": "qHWqvccBYR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image4-5"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text>Sergiu antrenează copiii la tenis de masă. După serviciu merge la propriile antrenamente, la tenis de câmp și badminton. Visează să devină campion paralimpic la badminton.</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_cid": "qHWqG8ILyZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content9-6"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            ".mbr-text P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>”Părinții m-au dat la acest colegiu ca toată viața să lucrez la calculator, să am o muncă mai ușoară, dar eu le-am spus că nu îmi place să stau pe scaun, vreau să mă mișc mai mult”, povestește Sergiu.&nbsp;</p><p></p><div>Viața lui a devenit alta când mama sa l-a înscris la secția de tenis a Comitetului Național Paralimpic. Treptat a început a juca și tenis de câmp în scaunul cu rotile, dar și badminton.</div><div>Visând la o carieră sportivă, după ce a absolvit colegiul, s-a înscris la un master la Universitatea de Educație Fizică și Sport, urmând să obțină specialitatea de antrenor și profesor de educație fizică și sport.&nbsp;</div><div><br></div><div><b>Datorită sportului și-a găsit un loc de muncă</b></div><div><br></div><div>Acum doi ani a participat la o școală de vară pentru copiii care își petreceau vacanța mare la „Artico”. Pentru că elevii au îndrăgit lecțiile lui de tenis, administrația i-a propus tocmai două job-uri. Astfel, toată ziua Sergiu lucrează metodist la Centru, iar seara antrenează câteva echipe de copiii care vor să facă performanțe în tenisul de masă. Cei mai mici elevi ai săi încă nu merg la școală, iar cei mai mari sunt elevi în clase gimnaziale. Antrenamentele au loc de trei ori pe săptămână și durează două ore.&nbsp;</div><div><br></div><div>Își amintește cum a fost prima prima sa zi de lucru: „Mă temeam că elevii nu mă vor asculta și nu mă vor lua în serios, că părinții nu vor avea încredere ca eu să le antrenez copiii”.&nbsp;</div><div><br></div><div>Acum e fericit să știe că munca sa este apreciată, iar cei care se înscriu la secția pe care o conduce se „molipsesc” ireversibil de pasiunea pentru sport.&nbsp;</div><div><br></div><div>&nbsp;„E un sport inteligent, care îți dezvoltă nu doar corpul, dar și mintea. Aici trebuie să calculezi fiecare mișcare, să știi cum și unde lovește mingea, să prevezi mișcările adversarului”, spune antrenorul.&nbsp;</div><div><br></div><div>Chiar dacă sunt obosiți după o zi de școală, copiii vin cu plăcere la lecțiile de tenis, iar unui fac adevărate sacrificii ca să ajungă la antrenamente. Valeria, o adolescentă de 11 ani, vine la secția de tenis dintr-o suburbie a capitalei. „Îmi place foarte mult acest gen de sport. Antrenorul e foarte bun și ne ajută să ne dezvoltăm”, spune Valeria.&nbsp;</div><div><br></div><div>Nikita a venit la școala de tenis după ce a încercat și alte genuri de sport: „Cred că la tenis nu voi renunța niciodată. Îmi place foarte mult”.&nbsp;</div><div><br></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qHWqObsXmU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-8"
+        },
+        {
+          "_styles": {
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "background": "@bgColor",
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(0deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video3",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"80\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://www.youtube.com/watch?v=AYUiBY3ePs8&feature=youtu.be&loop=1&autoplay=1\" width=\"800\" height=\"600\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "qHX08qe7nM",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video3-h"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            ".mbr-text P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>Pe lângă activitățile de la „Artico”, Sergiu găsește timp și pentru el - se antrenează de câteva ori pe săptămână la tenis de câmp și badminton. Visul lui cel mare este să ajungă la Jocurile paralimpice la badminton și să devină antrenor pentru adulții care practică tenisul în scaunul cu rotile. Anume la acest gen de sport a reușit să obțină până acum mai multe medalii la competiții internaționale și naționale.&nbsp;</p><p></p><div>Sergiu recunoaște că nu ar fi ajuns la performanțe dacă ar fi fost dependent în totalitate de scaunul de rotile, pe care îl folosește doar atunci când joacă tenis de câmp. El crede că pur și simplu nu ar fi avut cum să ajungă la locul de muncă, deoarece orașul este total neadaptat la nevoile persoanelor cu dizabilități.&nbsp;</div><div><br></div><div>Alături de echipa paralimpică a vizitat mai multe țări, unde s-a convins că Moldova mai are multe de recuperat până să aibă instituții și servicii accesibile pentru toți cetățenii, inclusiv pentru cei cu dizabilități fizice.&nbsp;</div><div><b><br></b></div><p></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qHX0Cu9Hct",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-i"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "text-align": "left",
+              "font-weight": "500"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left",
+              "margin-bottom": "0"
+            },
+            ".card-img": {
+              "text-align": "left",
+              "-webkit-flex": "1 0 auto",
+              "flex": "1 0 auto",
+              "width": "auto"
+            },
+            ".card-img span": {
+              "font-size": "72px",
+              "color": "rgb(255, 51, 102)"
+            },
+            ".card-box": {
+              "padding-left": "1rem",
+              "word-break": "break-word"
+            },
+            "@media (max-width: 991px)": {
+              ".card-img": {
+                "text-align": "left",
+                "padding-bottom": "0.75rem"
+              },
+              ".card-box": {
+                "padding-left": "0"
+              }
+            }
+          },
+          "_name": "features9",
+          "_customHTML": "<section class=\"features9\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset> \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media-container-row\">\n                    <div class=\"card-img pr-2\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-alert\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\"></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                           În Republica Moldova sunt peste 186 de mii de persoane cu dizabilități, ceea ce reprezintă 5 % din populația țării.&nbsp;<br><br>Persoanele cu dizabilități reprezintă doar 0,9 % din numărul total de salariați în Republica Moldova.&nbsp;<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media-container-row\">\n                    <div class=\"card-img pr-2\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-alert\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\"></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                           26 % din persoanele cu dizabilități cu statut de salariat activează în indistrie; 26% - în administrație publică, învățământ, artă și activități de recreere; 19% - în sănătate și asistență socială; 7% - în agricultură, silvicultură și pescuit. <br><br><i>Sursa: statistica.md</i><br> \n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media-container-row\">\n                    <div class=\"card-img pr-2\">\n                        <span mbr-icon class=\"mbri-desktop mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n                            Unique Styles\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                           Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"media-container-row\">\n                    <div class=\"card-img pr-2\">\n                        <span mbr-icon class=\"mbri-touch mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                           Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qHX14Af6vW",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features9-j"
+        }
+      ]
+    }
+  }
+}
